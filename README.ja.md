@@ -82,6 +82,14 @@ alias rm='safe-rm'
 npm uninstall -g safe-rm
 ```
 
+npm link でインストールした場合は、以下でリンクを解除できます：
+
+```sh
+npm unlink -g safe-rm   # グローバルリンクを解除
+# パッケージディレクトリ (このリポジトリ) に移動して実行
+npm unlink              # ローカルリンクも解除
+```
+
 または
 
 ```sh
